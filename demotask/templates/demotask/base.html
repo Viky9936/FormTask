@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>User Form</title>
+    </head>
+<body>
+<form action="{%url 'base' %}" method="post">{% csrf_token %}
+    <table>
+        <tr>
+            <td>Enter your name:</td>
+            <td><label for="name">Name:</label><input type="text" name="name"/></td>
+        </tr>
+        <tr>
+            <td>Enter your emailid:</td>
+            <td><label for="email">Emailid:</label><input type="email" name="emailid"/></td>
+        </tr>
+        <tr>
+            <td>Enter your message:</td>
+            <td><label for="message">Message:</label><input type="text" name="message"/></td>
+        </tr>
+        
+        <tr>
+            <td>
+ 
+            </td>
+            <td>
+                <input type="submit", value="Submit"/>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
